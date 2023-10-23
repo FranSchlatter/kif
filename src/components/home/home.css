@@ -1,0 +1,40 @@
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.home_app{
+  color: whitesmoke;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://i.pinimg.com/originals/be/87/ac/be87ac77f74e075f225696d52542c425.gif'); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://i.pinimg.com/originals/2c/2d/6f/2c2d6f89218cdb5c6a345d603484755f.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 94vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_app span{
+  color: blue;
+  text-shadow: white 1px 1px 3px;
+}
+
+.home_app button{
+  background-color: rgb(12, 12, 51);
+  border-radius: 4px;
+  padding: 8px;
+  color: white;
+  border: 1px solid blue;
+  font-weight: 500;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.home_app button:hover{
+  background-color: white;
+  color: blue;
+}
+
+

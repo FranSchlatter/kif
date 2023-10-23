@@ -1,0 +1,59 @@
+.navbar_app{
+    background-color: #212121;
+    color: white;
+    height: 58px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #212121;
+    color: white;
+    height: 58px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.navbar_options{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+}
+
+@media (max-width: 1050px) {
+    .navbar_options {
+        width: 100%;
+    }
+  }
+
+.navbar_options button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 550;
+    border: 2px solid #212121;
+    border-radius: 8px;
+    padding: 8px;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, border 0.4s ease-in-out;
+}
+
+.navbar_options button:hover{
+    color: #212121;
+    border: 2px solid blue;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.active {
+    color: blue !important;
+    border-bottom: 1px solid white !important;
+}

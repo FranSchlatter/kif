@@ -1,0 +1,203 @@
+.main_contact_app{
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,255,1) 100%);
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contact_title_h1 {
+    border-bottom: 2px solid blue;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+.contact_title_h5 {
+  color: rgb(12, 12, 51);
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact_app{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+/* izquierda */
+
+.contact_section_form{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    padding: 20px;
+    max-width: 700px;
+    background-color: rgb(12, 12, 51);
+    border-radius: 4px;
+}
+
+.contact_section_form h3, h4{
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact_section_form input{
+    border: 1px solid blue;
+    margin-bottom: 20px;
+    padding-left: 4px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+}
+
+.contact_section_form textarea{
+    border: 1px solid blue;
+    margin-bottom: 20px;
+    height: 200px;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+}
+
+.contact_section_form .contact_button_send{
+    background-color: transparent;
+    font-weight: 550;
+    width: 200px;
+    margin-bottom: 0px;
+    color: white;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.contact_section_form .button_resend{
+  margin: auto;
+  margin-top: 20px;
+  background-color: transparent;
+  font-weight: 550;
+  width: 200px;
+  margin-bottom: 0px;
+  border-radius: 4px;
+  border: 1px solid blue;
+  padding: 4px;
+  color: white;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.contact_button_send:hover, .button_resend:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: blue;
+}
+
+
+
+
+/* derecha */
+
+.contact_section_div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 70%;
+}
+
+.contact_section_div a{
+  text-decoration: none;
+  margin: 20px;
+  min-width: 260px;
+}
+
+.contact_section_div div{
+  background-color: rgb(12, 12, 51);
+  border-radius: 4px;
+  padding: 8px;
+  color: white;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact_section_div div:hover{
+  background-color: white;
+  color: blue;
+}
+
+.contact_section_div span{
+  font-weight: 550;
+  margin-left: 20px;
+}
+
+.contact_section_div span:hover{
+  color: blue;
+}
+
+
+
+/* animations */
+
+.slide-in-right {
+	animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+	animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.focus-in-contract {
+	animation: focus-in-contract 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.visible{
+  visibility: visible;
+}
+
+.hidden{
+  visibility: hidden;
+}
